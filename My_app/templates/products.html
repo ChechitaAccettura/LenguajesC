@@ -1,0 +1,35 @@
+{% extends "layout.html" %}  <!-- declaro de donde traigo la plantilla -->
+
+{% block content %}
+<div class='productos'>
+<div class="card">
+    <img src="{{ url_for('static', filename='img/html.jpg') }}" class="card-img-top" alt="html">
+    <div class="card-body">
+        <h5 class="card-title"> HTML 5</h5>
+        <p class="card-text">Iniciate en diseño WEB</p>
+        <a href="#" class="btn btn-outline-secondary">Asistir</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/css.jpg') }}" class="card-img-top" alt="css">
+    <div class="card-body">
+        <h5 class="card-title">CSS 3</h5>
+        <p class="card-text">Hoja de estilo en cascada</p>
+        <a href="#" class="btn btn-outline-secondary">Asistir</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/php.jpg') }}" class="card-img-top" alt="php">
+    
+    <div class="card-body">
+        <h5 class="card-title">PHP</h5>
+        <p class="card-text">Tu primer e-comerce</p>
+        <a href="#" class="btn btn-outline-secondary">Asistir</a>
+    </div>
+</div>
+
+</div>
+
+{% endblock%}

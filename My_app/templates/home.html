@@ -1,0 +1,19 @@
+{% extends "layout.html" %}  <!-- declaro de donde traigo la plantilla -->
+
+{% block content %}
+
+<div class='col-4 noticia'>
+    <h3> Noticias del ambiente </h3> 
+    <h6> 5 Mujeres Líderes en It </h6>
+    <img src="{{ url_for('static', filename='img/mujeres.png') }}" id= "noticia_img" alt="5mujeres">
+    <p class= "parrafo"> 
+        Intentarlo cuantas veces sea necesario, atreverse a innovar y creer en uno mismo.
+    </p>
+    <p class= "parrafo">
+        Son algunas de las premisas de muchas de las mujeres que han conseguido el éxito en el ámbito tecnológico de América Latina, donde el panorama no siempre es alentador.
+    </p>
+
+    <a class="btn btn-outline-secondary" target= _blank  href="https://www.bbc.com/mundo/articles/clw7510g5jdo">Lee la noticia completa acá...</a>
+</div>
+
+{% endblock%}

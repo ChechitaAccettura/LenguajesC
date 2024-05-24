@@ -1,0 +1,17 @@
+{% extends "layout.html" %}   <!-- declaro de donde traigo la plantilla -->
+
+{% block content %}
+<div class= 'productos'>
+  <div class= 'col-6'> 
+    <img src="{{ url_for('static', filename='img/aboutus.jpg') }}" class="card-img-top" alt="aboutus">
+
+  </div>
+
+  <div class= 'col-5 parrafo middle'> 
+    <h2> Aprender a programar es posible</h2>
+
+  <h5> Sumate a nuestros estudiantes en todas partes del mundo, compartí tu proceso de aprendizaje, imaginá otro futuro...</5>
+  </div>
+  </div>
+
+{% endblock%}

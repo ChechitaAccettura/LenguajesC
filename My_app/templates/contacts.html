@@ -1,0 +1,59 @@
+{% extends "layout.html" %}  <!-- declaro de donde traigo la plantilla -->
+
+{% block content %}
+
+<form class="row g-3">
+    <div class="col-md-4 form-in">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" required>
+
+    </div>
+    <div class="col-md-4 form-in">
+        <label for="lastname" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="lastname" required>
+    </div>
+
+    <div class="col-md-4 form-in">
+        <label for="mail" class="form-label">e-mail</label>
+        <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" required>
+        </div>
+    </div>
+
+    <div class="col-md-6 form-in">
+        <label for="consulta" class="form-label">Escriba su mensaje</label>
+        <input type="text" class="form-control" id="consulta" required>
+    </div>
+
+    <div class="col-md-3 form-in">
+        <label for="hour" class="form-label">Horario de preferencia</label>
+        <select class="form-select" id="hour" required>
+            <option selected disabled value="">Elegí un horario...</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+            <option>Cualquiera</option>
+        </select>
+    </div>
+
+    <div class="col-md-3 form-in">
+        <label for="phone" class="form-label">Teléfono</label>
+        <input type="phone" class="form-control" id="phone" required>
+
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="know" required>
+        <label class="form-check-label" for="know">
+            Ya conozco la plataforma de cursos anteriores
+        </label>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <button class="btn btn-outline-secondary" type="submit">Enviar formulario</button>
+    </div>
+    </form>
+
+{% endblock%}
